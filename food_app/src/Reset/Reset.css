@@ -1,0 +1,15 @@
+.sendlink2{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top:30px ;
+    margin-left: 230px;
+    padding: 69px;
+    width: 30rem;
+    background-color: #36AAD9;
+    border-radius: 20px; 
+    padding-block: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}

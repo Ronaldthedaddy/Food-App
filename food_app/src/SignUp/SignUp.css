@@ -1,0 +1,208 @@
+.main_cont{
+    height: 100vh;
+    display: flex;
+}
+
+.first_cont{
+    flex: 0.5;
+    background: #56a4c4;
+    padding: 30px;
+    /* height: 100vh; */
+
+}
+.tm_logo{
+    padding-top: 70px;
+}
+.second_cont{
+    flex: 0.5;
+    background: #FFFFFF;
+    /* height: 100vh; */
+}
+.food_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 180px;
+}
+.foodlogo{
+    width: 500px;
+}
+.down_text{
+    color: white;
+    font-weight: 700px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 100px;
+    /* gap: 10px; */
+}
+/* .curvebox{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+}
+.curve{
+
+} */
+
+.curve{
+    border-bottom: 1px solid white;
+    border-radius: 95%;
+    width: 14rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.food_logo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+}
+
+.details_text{
+    color: #A3A3A3;
+    font-weight: 700px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.placeholder{
+    width: 35rem;
+    border: 1px solid black;
+    height: 3rem;
+    border-color: #3A3A3A4D;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    gap: 40px;
+    /* justify-content: space-around; */
+    align-items: center;
+    font-size: 147px;
+}
+.eye{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: #969494;
+    padding-top: 6px;
+}
+
+.input{
+    width: 28rem;
+    height: 2.6rem;
+    border: none;
+    display:flex;
+    outline: none;
+    margin-left: 10px;
+    font-size: large;
+    padding-left: 10px;
+    
+}
+.input2{
+    width: 28rem;
+    height: 2.6rem;
+    border: none;
+    display:flex;
+    outline: none;
+    margin-left: 10px;
+    font-size: large;
+    padding-left: 10px;
+    font-weight: bold;
+    
+}
+
+.first_name{
+    display: flex;
+    align-items: center;
+    padding-left: 230px;
+    font-weight: 650;
+    font-size: 18px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    padding-left: 230px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.person{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-color: #3A3A3A4D;
+    border-radius: 10px 0px 0px 10px;
+}
+.last_name{
+    display: flex;
+    align-items: center;padding-left: 230px;
+    font-weight: 650;
+    font-size: 18px;
+    padding-top: 20px;
+}
+.input{
+    width: 28rem;
+    height: 2.6rem;
+    border: none;
+    display:flex;
+    outline: none;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.password{
+    display: flex;
+    align-items: center;
+    padding-left: 230px;
+    font-weight: 650;
+    font-size: 18px;
+    padding-top:25px;
+}
+.register_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.register_btn{
+    display: flex;
+    /* align-items: center; */
+    margin-top: 25px;
+    margin-left: 230px;
+    justify-content: center;
+    width: 38.5rem;
+    background-color: #36AAD9;
+    border-radius: 20px; 
+    padding-block: 15px;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 15px;
+}
+.login_link{
+    color: #56A4C4;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 15px;
+}
+.register_link{
+    color: #56A4C4;
+}
