@@ -1,0 +1,184 @@
+.navin{
+    display: flex;
+    flex-direction: column;
+    background: #EDEDED;
+    /* align-items: center; */
+}
+.blackbuy{
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    gap: 12rem;
+    background: #36AAD9;
+    width: 100vw;
+    height: 13rem;
+}
+.blackman{
+    display: flex;
+    padding-top: 5rem;
+}
+.buypay{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+.airtime{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 400;
+}
+.bills{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+}
+.manwoman{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20rem;
+    gap: 1rem;
+    height: 21%;
+    width: 90%;
+}
+.man{
+    display: flex;
+    background-color: #FFF;
+    background-image: url(../images/manpapers.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    /* background-size: cover; */
+    width: 28%;
+    border-radius: 30px 10px 10px 30px;
+    /* height: 100%; */
+}
+.manin{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 0 2rem 1.5rem;
+
+}
+.pyb{
+    color: #FFF;
+    font-size: 23px;
+    width: fit-content;
+    padding: 0.6rem;
+    font-weight: 700;
+    border-radius: 20px;
+    background: #36AAD9;
+}
+.takeout{
+    padding-bottom: 2.3rem;
+    /* border: 20px; */
+}
+.tassle{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 20px;
+    font-weight: 500;
+}
+.bluemen{
+    color: #36AAD9;
+    font-size: 22px;
+    font-weight: 700;
+}
+.woman{
+    display: flex;
+    background-image: url(../images//womanphone.png);
+    width: 25%;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    /* background-size: cover; */
+}
+
+.trov{
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 7rem; */
+}
+.trapezium{
+    position: relative;
+}
+.buyprov{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 2rem;
+    padding-left: 1rem;
+    /* margin-top: 20rem; */
+    bottom: 10%;
+    /* right: 55%; */
+    /* padding-bottom: 2rem; */
+}
+.solobuytext{
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 700;
+    width: fit-content;
+    padding: 0.6rem;
+    border-radius: 25px;
+    background: #36AAD9;
+}
+.buytimetext{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #FFF;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+}
+.solotimetext{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.buynet{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 43.5%;
+    margin-top: 3rem;
+    /* padding-inline: 40rem; */
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    margin-left: 26.5rem;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 1rem 1.5rem;
+}
+.buynet2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 43.5%;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    /* width: fit-content; */
+    gap: 3.5rem;
+    margin-left: 26.5rem;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 1rem 1.5rem;
+}
+.buyone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem .5rem;
+    text-align: center;
+    gap: 1.5rem;
+    /* justify-content: center; */
+    border-radius: 20px;
+    background: rgba(55, 142, 249, 0.10);
+    /* justify-content: center; */
+}
+.buytext{
+    font-size: 16px;
+    font-weight: 500;
+}

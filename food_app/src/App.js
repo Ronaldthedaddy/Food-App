@@ -5,6 +5,11 @@ import Forgot from "./Forgot/forgot"
 import Reset from "./Reset/Reset"
 import Onboarding from "./Onboarding/Onboarding"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Dashboard from "./Dashboard/dashboard"
+import Navbar from "./Navbar/Navbar"
+import Sidebar from "./Sidebar/Sidebarr"
+import Services from "./Services/services"
+import Checkout from "./Checkout/checkout"
 function App() {
   return (
 
@@ -16,9 +21,12 @@ function App() {
         <Route path="/reset" element={<Reset/>}/>
         <Route path="/proceed" element={<Proceed/>}/>
         <Route path ="/onboarding" element= {<Onboarding/>}/>
-        {/* <Route path="/success" element={<Login/>} */}
-        {/* <Route path="/register" element={<Signup}></Route>  */}
-
+        <Route path ="/dashboard" element= {<Dashboard/>}/>
+        <Route path ="/navbar" element= {<Navbar/>}/>
+        <Route path ="/sidebar" element= {<Sidebar/>}/>
+        <Route path ="/services" element= {<Services/>}/>
+        <Route path ="/checkout" element= {<Checkout/>}/>
+     
       </Routes>
     </Router>
     

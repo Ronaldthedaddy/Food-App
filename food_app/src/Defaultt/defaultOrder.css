@@ -1,0 +1,42 @@
+.defaultcont{
+    margin-top: 0.3rem;
+    padding-top: 1rem;
+    background-color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    height: fit-content;
+    padding-bottom: 25rem;
+
+}
+.defaultin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    border: 2px solid rgba(54, 170, 217, 0.70);
+}
+.deforder{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.defaux{
+    font-size: 24px;
+    font-weight: 500;
+}
+.enjex{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0.3rem;
+}
+.checkicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    color: #FFFFFF;
+    background: #36AAD9;
+    border-radius: 50%;
+}

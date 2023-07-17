@@ -1,0 +1,644 @@
+.sidebar2{
+    display: flex ;
+    gap: 10px;
+}
+.dashbackpic{
+    background-repeat: no-repeat;
+    /* margin-top: 20px; */
+    width: 100%;
+    height: 20vh;
+}
+.duo{
+    display: flex;
+    top: -4rem;
+    width: 100%;
+    position: relative;
+    /* gap: 2rem; */
+}
+.both{
+    padding: 2rem;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    gap: 3rem;
+}
+.leftduo{
+    width: 61%;
+    margin-right: 1rem;
+}
+.ordeadoth{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.orderout{
+    border-radius: 20px;
+    background: #FFFFFF;
+    width: 46%;
+    padding: 0 1rem;
+}
+
+.deadout{
+    background: #fff;
+    display: flex;
+    width: 47%;
+    padding: 13px 9px 13px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.ordertype{
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+
+}
+.ortype{
+    display: flex;
+    padding: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.defspec{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    gap: 1rem;
+
+}
+.deford{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    width: 47%;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.specord{
+    display: flex;
+    color: rgba(0, 0, 0, 0.50);
+    /* color: #FFFFFF; */
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+    /* background: #36AAD9; */
+    font-size: 18px;
+    width: 35%;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 15px 43px;
+    justify-content: center;
+    align-items: center;
+}
+
+.deadin{
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    gap: 5px;
+    /* width: 462px; */
+    background-color: #36AAD9;
+    padding: 11px 15px 11px 16px;
+    border-radius: 20px;
+    
+}
+.calendar{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 80px;
+    padding: 10px 11px 6px 10px;
+    /* justify-content: flex-end; */
+    align-items: center;
+    gap: 6px;
+    border-radius: 20px;
+    background: #FFF;
+}
+.ate{
+    font-size: 30px;
+    font-weight: 500;
+    /* line-height: 30px; */
+}
+.caline{
+    width: 59px;
+    height: 1px;
+    background: #000;
+}
+.camonth{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.deays{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-top: 1.5rem;
+}
+.clead{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    gap: 5px;
+    /* line-height: 30px; */
+}
+.deadlinetext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+.zerod{
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    border-top: 1px solid #FFFFFF;
+
+}
+.deadline{
+    width: 20rem;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.60);
+}
+.bukka2{
+    background: url(../images/bukkaround.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+    justify-content: space-around;
+    gap: 30rem;
+    /* background-color: red; */
+    height: 150px;
+    border-radius: 20px;
+/* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+.bukkontainer{
+    display: flex;
+}
+
+.bukkontent{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+   
+    /* padding: 6rem; */
+}
+.tastystar{
+    display: flex ;
+}
+.vendome{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.mext{
+    font-size: 32px;
+    font-weight: 700;
+}
+.excext{
+    color: #3C3C3C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.tastystar{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.tastiner{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(152deg, #6BCDF5 0%, rgba(110, 165, 188, 0.00) 100%);
+}
+.fournine{
+    font-size: 16px;
+    font-weight: 500;
+}
+.taxt{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+}
+.vext{
+    font-size: 18px;
+    font-weight: 500;
+}
+.navout{
+    display: flex;
+    margin-top: 0.8rem;
+    background: white; 
+    padding: 0.01rem;
+    border-radius: 20px;
+    border: 4px solid #FFF;
+}
+.navbard{
+    display: flex;
+    /* padding-left: 70px; */
+    /* padding-block: 35px; */
+    background: white;
+    /* background: #EDEDED; */
+}
+
+.nav_searchd{
+    display: flex;
+}
+.search_holderd{
+    display: flex;
+    padding: 10px 0px;
+    /* align-items: center; */
+    border-radius: 20px;
+    background: #EBEBEB;
+}
+.search_inputd{
+    border: none;
+    outline: none;
+    width: 47.75vw;
+    padding:  0px 20px;
+    background-color: #EBEBEB;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 400;
+}
+.searchicon{
+    font-size: 20px;
+    width: 20px;
+    /* padding-left: 15px; */
+}
+.brunerout{
+    padding: 15px;
+    background: #FFFFFF;
+    margin-top: 1rem;
+    border-radius: 20px 20px 0px 0px;
+}
+.brunerin{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 18rem;
+
+}
+.brext{
+    display: flex;
+    /* width: 194px; */
+    /* height: 59px; */
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: #36AAD9;
+}
+.lext,.dext{
+    font-size: 18px;
+    font-weight: 500;
+}
+.brice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0.3rem;
+    border-bottom: 4px solid #ececec;
+
+    background: #FFFFFF;
+    gap: 53px;
+}
+
+/* .breaktext{
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 1rem 1rem 1rem;
+} */
+.breaktext,
+.ricetext,
+.pastext,
+.swext,
+.otherstext{
+    /* font-size: 18px;
+    font-weight: 400;
+    font-weight: 400; */
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 1rem 1rem 1rem;
+}
+.bomelette{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #FFFFFF;
+}
+.boiledyam{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width:44%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+.boilcount{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    gap: 0.6rem;
+    padding: .3rem;
+}
+.boiladd{
+    display: flex;
+    gap: 5rem;
+    align-items: last baseline;
+}
+.boiltext{
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    /* margin-left: 2rem; */
+}
+.tentext{
+    color: #158DBE;
+    font-size: 14px;
+    font-weight: 500;
+    /* padding: 0.15rem 0.4rem; */
+    width: fit-content;
+    border-radius: 5px;
+    background: rgba(54, 170, 217, 0.20);
+}
+.sixhtext{
+    font-size: 16px;
+    font-weight: 400;
+}
+.addicon{
+    color: #158DBE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(21, 141, 190, 0.10);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightduo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 37%; */
+    padding: 1rem;
+    border-radius: 20px;
+    height: fit-content;
+    background-color: #FFFFFF;
+}
+.rightin{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    /* margin-left: 20px; */
+    width: 486px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    /* border: 1px solid #FFF; */
+    background: #FFFFFF;
+    flex-direction: column;
+    align-items: flex-start;
+    /* flex-shrink: 0; */
+}
+.ofrom{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+.bukext{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.waixt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.waimg{
+    background: url(../images/waiter.png );
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 258px;
+    height: 186px;
+    /* flex-shrink: 0; */
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    margin-left: 50px;
+    border-radius: 10px;
+
+}
+.waiter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nolook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+.noxt{
+    color: #36AAD9;
+    font-size: 20px;
+    font-weight: 500;
+}
+.looder{
+    display: flex;
+    width: 310px;
+    flex-direction: column;
+}
+.loxt{
+    color: #A3A3A3;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.cashira{
+    /* display: flex; */
+    margin-top: 250px;
+    display: inline-flex;
+    padding: 15px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #36AAD9;
+    gap: 330px;
+}
+.cashtext{
+    color: #A3A3A3;
+    font-size: 14px;
+    font-weight: 500;
+}
+.naira{
+    color: #078C1C;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    /* letter-spacing: -0.5px; */
+}
+.prout{
+    display: inline-flex;
+    padding: 18px 167.7px;
+    margin-bottom: 10px;
+    /* padding-inline: 164.4px; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: rgba(54, 170, 217, 0.60);
+}
+
+.prext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}

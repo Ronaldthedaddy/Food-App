@@ -1,0 +1,71 @@
+.navbar{
+    display: flex;
+    padding-left: 70px;
+    padding-block: 35px;
+    background: white;
+}
+.navbar2{
+    background-color: #EDEDED;
+    
+}
+
+.nav_search{
+    display: flex;
+    margin-right: 100px;
+}
+.nav_right{
+    margin-left: 150px;
+    display: flex;
+    position: relative;
+}
+.search_holder{
+    display: flex;
+    padding: 0.5rem 6rem;
+    align-items: center;
+    border-radius: 20px;
+    background: #EBEBEB;
+}
+.search_input{
+    border: none;
+    outline: none;
+    width: 37.5vw;
+    padding:  1px 20px;
+    background-color: #EBEBEB;
+}
+.searchicon{
+    font-size: 25px;
+    /* padding-left: 15px; */
+}
+.human{
+    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.countpart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.humanpeter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.peter{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 17px;
+}
+.adels{
+    font-size: 16px;
+    font-weight: 500;
+}
+.gmail{
+    color: #A3A3A3;
+    font-size: 12px;
+    font-weight: 400;
+}
