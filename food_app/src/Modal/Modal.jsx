@@ -1,18 +1,36 @@
-// import "./modal.css";
-import ReactDom from "react-dom";
+import React from 'react'
+import "./style.modules.css";
+import ReactDOM from 'react-dom';
 
-const Modal = ({ open, children, type }) => {
-  if (open) {
-    document.body.classList.add("body-active-modal");
-  } else {
-    document.body.classList.remove("body-active-modal");
-  }
+const Modal = ({ isOpen, onClose, children, className }) => {
+  const modalStyles = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    display: isOpen ? 'flex' : 'none',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
 
-  if (!open) return null;
-  return ReactDom.createPortal(
-    <>{children}</>,
-    document.getElementById("portal")
-  );
+  return isOpen
+    ? ReactDOM.createPortal(
+        <div style={modalStyles}>
+          <div className={className} style={{ backgroundColor: 'white', padding: '20px', borderRadius: '5px' }}>
+            {children}
+            {/* <button style={x} onClick={onClose}>x</button> */}
+          </div>
+        </div>,
+        document.body
+      )
+    : null;
 };
-
 export default Modal;
+// const x = {
+// backgroundColor: 'red',
+// // marginRight: '1rem',
+// display: 'flex',
+// justifyContent: 'end'
+// }

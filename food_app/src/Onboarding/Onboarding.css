@@ -167,10 +167,8 @@
 }
 .four{
     display: flex;
-    /* justify-content: left; */
     justify-content: center;
     gap: 80px;
-    /* margin-right: 500px; */
     padding-left: 50px;
     margin-top: 80px;
     padding-bottom: 30px;
@@ -180,6 +178,7 @@
         font-size: 24px;
         font-weight: 700;
         margin-top: 5px;
+        color: black;
 }
 .ven_rating{
     display: flex;
@@ -192,7 +191,6 @@
     margin-left: 8px;
     font-weight: 400;
     color: grey;
-    ;
 }
 .other_text{
     display: flex;
@@ -235,25 +233,16 @@
     top: 100px;
 
 }
-/* .eclipse2{
-    position: absolute;
-
-} */
 .content{
     display: flex;
     gap: 20px;
     flex-direction: column;
-    
-    
 }
 .content button{
     display: flex;
     border: 1px solid #FFF;
     border-radius: 10px;
     padding: 15px;
-    /* align-items: flex-start; */
-    /* justify-content: space-around; */
-
 }
 .fireline{
     display: flex;
@@ -311,19 +300,11 @@
     margin-left: 20px;
     margin-top: 3px;
 }
- /* .chefpic{
-    width: 350px;
-}
-.foodiepic{
-    width: 270px
-}  */
+ 
 .chef_foodie{
     display: flex;
     margin-top: 100px;
-    /* margin-bottom: 30px; */
-    /* display: inline-flex; */
     align-items: center;
-    /* justify-content: center; */
     gap: 411px;
 }
 .chef{

@@ -1,4 +1,4 @@
-.modalBackground{
+/* .modalBackground{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -12,4 +12,10 @@
     background-color: rgba(0,0,0,0.3);
     z-index: 9000;
     transition: linear 0.3s;
+} */
+
+.modaler{
+    border: 2px solid red;
+    width: 500px;
+    height: 500px;
 }

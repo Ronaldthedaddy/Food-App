@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import Breakfast from '../Breakfast/breakfast';
-import Riced from '../Rice/Ricestew';
-import Pasta from '../Pasta/pastas';
-import Swallows from '../Swallows/Swallows';
-import Other from '../Others/Others';
+import Breakfast from '../Dashboard/breakfast';
+import Riced from '../Dashboard/Ricestew';
+import Pasta from '../Dashboard/pastas';
+import Swallows from '../Dashboard/Swallows';
+import Other from '../Dashboard/Others';
 
 const SpecialOrder = () => {
    const [ Breakfast1, setBreakfast1] = useState(true);
@@ -90,7 +90,7 @@ const SpecialOrder = () => {
 
             </section>
 
-            {Breakfast1 && <Breakfast/>}
+            {Breakfast1 && <Breakfast />}
             {Rice1 && <Riced/>}
             {Pasta1 && <Pasta/>}
             {Swallows1 && <Swallows/>}

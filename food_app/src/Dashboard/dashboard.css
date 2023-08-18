@@ -37,18 +37,6 @@
     width: 46%;
     padding: 0 1rem;
 }
-
-.deadout{
-    background: #fff;
-    display: flex;
-    width: 47%;
-    padding: 13px 9px 13px 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-}
-
-
 .ordertype{
     background-color: #fff;
     justify-content: center;
@@ -101,76 +89,30 @@
     align-items: center;
 }
 
-.deadin{
+.caroutt{
+    /* background-color: red; */
+    display: flex; 
+    align-items: center;
+    width: 47%;
+    /* padding: 13px 9px 13px 10px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border-radius: 20px; */ 
+}
+/* .deadout{
+     background: #fff;
+    
+} */
+/* .deadin{
     display: flex;
     flex-direction: row;
-    /* align-items: flex-start; */
     gap: 5px;
-    /* width: 462px; */
     background-color: #36AAD9;
     padding: 11px 15px 11px 16px;
     border-radius: 20px;
     
-}
-.calendar{
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;
-    width: 80px;
-    padding: 10px 11px 6px 10px;
-    /* justify-content: flex-end; */
-    align-items: center;
-    gap: 6px;
-    border-radius: 20px;
-    background: #FFF;
-}
-.ate{
-    font-size: 30px;
-    font-weight: 500;
-    /* line-height: 30px; */
-}
-.caline{
-    width: 59px;
-    height: 1px;
-    background: #000;
-}
-.camonth{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
-}
-.deays{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    padding-top: 1.5rem;
-}
-.clead{
-    display: flex;
-    align-items: center;
-    color: #FFF;
-    gap: 5px;
-    /* line-height: 30px; */
-}
-.deadlinetext{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: 500;
-}
-.zerod{
-    color: #FFF;
-    font-size: 22px;
-    font-weight: 500;
-    border-top: 1px solid #FFFFFF;
+} */
 
-}
-.deadline{
-    width: 20rem;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.60);
-}
 .bukka2{
     background: url(../images/bukkaround.png);
     background-repeat: no-repeat;
@@ -261,7 +203,7 @@
 .search_holderd{
     display: flex;
     padding: 10px 0px;
-    /* align-items: center; */
+    width: 53.2vw;
     border-radius: 20px;
     background: #EBEBEB;
 }
@@ -271,7 +213,6 @@
     width: 47.75vw;
     padding:  0px 20px;
     background-color: #EBEBEB;
-    color: rgba(0, 0, 0, 0.25);
     font-size: 16px;
     font-weight: 400;
 }
@@ -348,10 +289,16 @@
     gap: 1.5rem;
     background-color: #FFFFFF;
 }
+.imaplus{
+    display: flex;
+    /* align-items: center; */
+    gap: 0.5rem;
+}
 .boiledyam{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: last baseline;
     width:44%;
     padding: 1rem;
     border-radius: 10px;
@@ -361,7 +308,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;  
-    gap: 0.6rem;
+    gap: 1rem;
+    padding: .3rem;
+}
+.boilcount2{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    width: 100%;  
     padding: .3rem;
 }
 .boiladd{
@@ -370,6 +324,9 @@
     align-items: last baseline;
 }
 .boiltext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
     font-weight: 500;
     width: 100%;

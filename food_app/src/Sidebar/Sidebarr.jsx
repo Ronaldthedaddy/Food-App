@@ -88,27 +88,6 @@ const Sidebar = () => {
 
 
      </main>
-
-    // <main>
-    //     <div>
-    //     {/* style={{width:'20px'}} */}
-    // <img src={tmlogo}  alt="" className='ontmlogo'/>
-    //  </div>
-
-    // <div className='dashboard'>
-    //     <LuLayoutDashboard/>
-    // </div>
-
-    // <div>
-    // <TfiWorld/>
-    // </div>
-
-    // <div>
-    //     <IoSettingsOutline/>
-    // </div>
-
-    // </main>
-    
   )
 }
 

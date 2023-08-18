@@ -2,23 +2,19 @@ import React, { useState } from "react";
 import "./dashboard.css";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebarr";
+import Carousel from "./Carousel/carousel";
 import dashback from "../images/dashnavback.png";
 import dashstar from "../images/dashstar.png";
 import dome from "../images/dome.png";
 import SpecialOrder from "../specialOrder/specialOrder";
-// import Default from "../Defaultt/Deft.";
 import Defaults from "../Defaultt/defaultOrder";
-// import waiter from "../images/waiter.png"
-import { AiOutlineClockCircle } from "react-icons/ai";
-import {AiOutlineSearch} from "react-icons/ai"
+import { AiOutlineSearch } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-  const Dashboard = () => {
+const Dashboard = () => {
+  const [Default, setDefault] = useState(true);
+  const [Special, setSpecial] = useState(false);
 
-    const [Default, setDefault] = useState(true);
-    const [Special, setSpecial] = useState(false);
-
- 
   return (
     <main className="whole">
       <div className="sidebar2">
@@ -43,141 +39,100 @@ import { Link } from "react-router-dom";
                       <div className="ordertype">
                         <div className="defspec">
                           <div
-                           onClick={(()=>{
-                            setDefault(true);
-                            setSpecial(false);
-                           })}
-                           style={{
-                            background:Default? "#36AAD9":"",
-                            color:Default? "#fff":"",
-                            border:Default?"none":"",
-                           }}
-                          className="deford">Default Order
+                            onClick={() => {
+                              setDefault(true);
+                              setSpecial(false);
+                            }}
+                            style={{
+                              background: Default ? "#36AAD9" : "",
+                              color: Default ? "#fff" : "",
+                              border: Default ? "none" : "",
+                            }}
+                            className="deford"
+                          >
+                            Default Order
                           </div>
-                          <div 
-                           onClick={(()=>{
-                            setSpecial(true);
-                            setDefault(false)
-                           })}
-                           style={{
-                            background:Special? "#36AAD9":"",
-                            color:Special? "#fff":"",
-                            border:Special?"none":"",
-                           }}
-                          className="specord"
-                          >Special Order</div>
+                          <div
+                            onClick={() => {
+                              setSpecial(true);
+                              setDefault(false);
+                            }}
+                            style={{
+                              background: Special ? "#36AAD9" : "",
+                              color: Special ? "#fff" : "",
+                              border: Special ? "none" : "",
+                            }}
+                            className="specord"
+                          >
+                            Special Order
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="deadout">
-                      <div className="deadin">
-                        <div className="calendar">
-                          <div className="ate">8</div>
-                          <div className="caline"></div>
-                          <div className="camonth">May</div>
-                        </div>
-
-                        <div className="deays">
-                          <div className="clead">
-                            <div className="clock">
-                              <AiOutlineClockCircle />
-                            </div>
-                            <div className="deadlinetext"> Deadline </div>
-                          </div>
-                          <div className="zerod">
-                            0 Days : 2hrs : 48 min : 56 secs
-                          </div>
-                        </div>
-                      </div>
+                    <div className="caroutt">
+                      <Carousel className="caroupic" />
                     </div>
                   </div>
-
-
-
 
                   <div className="bukka2">
-                  <div className="bukkontainer">
-                    <div className="bukkontent">
-                      <div className="mext">Mama J Bukka</div>
-                      <div className="excext">Exceptional</div>
+                    <div className="bukkontainer">
+                      <div className="bukkontent">
+                        <div className="mext">Mama J Bukka</div>
+                        <div className="excext">Exceptional</div>
 
-                      <div className="tastystar">
-                        <div className="tastiner"> <div className="taxt">Tasty</div></div>
-                        <div>
-                          {" "}
-                          <img src={dashstar} alt="" />{" "}
+                        <div className="tastystar">
+                          <div className="tastiner">
+                            {" "}
+                            <div className="taxt">Tasty</div>
+                          </div>
+                          <div>
+                            {" "}
+                            <img src={dashstar} alt="" />{" "}
+                          </div>
+                          <div className="fournine">4.9</div>
                         </div>
-                        <div className="fournine">4.9</div>
+                      </div>
+                    </div>
+
+                    <div className="vendome">
+                      <div className="vext">Vendor</div>
+                      <div>
+                        <img src={dome} alt="" />
                       </div>
                     </div>
                   </div>
-
-                  <div className="vendome">
-                    <div className="vext">Vendor</div>
-                    <div>
-                      <img src={dome} alt="" />
+                </div>
+                {/* Navbar Section */}
+                <div className="navout">
+                  <navbar className="navbard">
+                    <div className="nav_searchd">
+                      <div className="search_holderd">
+                        <AiOutlineSearch className="searchicon" />
+                        <input
+                          type="text"
+                          placeholder="Search in Mama J Bukka"
+                          className="search_inputd"
+                        />
+                      </div>
                     </div>
-                  </div>
+                  </navbar>
                 </div>
+                {/*Breafast/Lunch/Dinner Demacation  */}
+                <article className="brunerout">
+                  <section className="brunerin">
+                    <div className="brext">Breakfast</div>
+                    <div className="lext">Lunch</div>
+                    <div className="dext"> Dinner </div>
+                  </section>
+                </article>
 
-
-
-
-
-                </div>
-
-              
-
-
-
-        {/* Navbar Section */}
-
-      <div className="navout">
-
-      <navbar className='navbard'>
-       
-       <div className='nav_searchd'>
-
-       <div className='search_holderd'>
-       <AiOutlineSearch className='searchicon'/>
-       <input type="text" placeholder="Search in Mama J Bukka" className="search_inputd" />
-       </div>
-
-       </div>
-
-   </navbar>
-
-      </div>
-
-
-            {/*Breafast/Lunch/Dinner Demacation  */}
-    
-          
-          <article className="brunerout">
-
-            <section className="brunerin">
-
-            <div className="brext">Breakfast</div>
-            <div className="lext">Lunch</div>
-            <div className="
-            dext">Dinner</div>
-
-            </section>
-           
-
-          </article>
-          
-          {Special &&  <SpecialOrder/>}
-            {Default && <Defaults/>}
-
-
-                    
-
+                {Special && <SpecialOrder />}
+                {Default && <Defaults />}
+                
               </section>
 
-
-                        {/*Right Side*/}
+              {/*Right Side*/}
 
               <section className="rightduo">
                 <div className="rightin">
@@ -207,9 +162,9 @@ import { Link } from "react-router-dom";
                     <span className="naira">&#8358;1,000.00</span>
                   </div>
 
-                  <div className="prout">
-                    <Link to='/checkout' className="prext">PROCEED TO CASHOUT</Link>
-                  </div>
+                  <Link to="/checkout" className="prout">
+                    <div className="prext">PROCEED TO CASHOUT</div>
+                  </Link>
                 </div>
               </section>
             </main>

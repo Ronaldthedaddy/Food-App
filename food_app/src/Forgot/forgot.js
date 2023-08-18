@@ -30,6 +30,15 @@ export const forgot = () => {
       icon: <AiFillCheckCircle />,
     },
   ];
+
+  const handleSendCode = (e) => {
+e?.preventDefault();
+if (sessionStorage.getItem("forget") === 'email') {
+  window.location.assign('/resetemail')
+}else{
+  window.location.assign('/resetnumber')
+}
+  }
   return (
     <main className="main_cont">
       {/* First container (left side) */}
@@ -112,14 +121,14 @@ export const forgot = () => {
               );
             })}
 
-            <Link to="/reset">
+            {/* <Link to="/reset"> */}
               {" "}
-              <b className="sendlink">Send Link</b>{" "}
-            </Link>
+              <button onClick={handleSendCode} style={{border: 'none', width: '100%', cursor: 'pointer'}} className="sendlink">Send Code</button>{" "}
+            {/* </Link> */}
 
             <div className="account">
               <div>Didn’t receive link? </div>
-              <Link to="/reset" className="login_link">
+              <Link to="/forgot" className="login_link">
                 Resend
               </Link>
             </div>

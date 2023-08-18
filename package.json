@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "react-icons": "^4.9.0",
-    "react-router": "^6.12.1"
+    "react-icons": "^4.10.1",
+    "react-router": "^6.12.1",
+    "swiper": "^10.1.0"
   }
 }

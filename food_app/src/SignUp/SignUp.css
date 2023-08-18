@@ -37,15 +37,6 @@
     padding-top: 100px;
     /* gap: 10px; */
 }
-/* .curvebox{
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-
-}
-.curve{
-
-} */
 
 .curve{
     border-bottom: 1px solid white;
@@ -73,36 +64,12 @@
     padding-top: 20px;
     padding-bottom: 30px;
 }
-.placeholder{
-    width: 35rem;
-    border: 1px solid black;
-    height: 3rem;
-    border-color: #3A3A3A4D;
-    border-radius: 0 10px 10px 0;
-    display: flex;
-    gap: 40px;
-    /* justify-content: space-around; */
-    align-items: center;
-    font-size: 147px;
-}
 .eye{
     background-color: white;
     border: none;
     font-size: 20px;
     color: #969494;
     padding-top: 6px;
-}
-
-.input{
-    width: 28rem;
-    height: 2.6rem;
-    border: none;
-    display:flex;
-    outline: none;
-    margin-left: 10px;
-    font-size: large;
-    padding-left: 10px;
-    
 }
 .input2{
     width: 28rem;
@@ -123,6 +90,14 @@
     padding-left: 230px;
     font-weight: 650;
     font-size: 18px;
+}
+.first_name2{
+    display: flex;
+    align-items: center;
+    padding-left: 230px;
+    font-weight: 650;
+    font-size: 18px;
+    padding-top: 2rem;
 }
 
 .name{
@@ -176,15 +151,16 @@
 }
 
 .register_btn{
-    display: flex;
-    /* align-items: center; */
-    margin-top: 25px;
-    margin-left: 230px;
-    justify-content: center;
-    width: 38.5rem;
-    background-color: #36AAD9;
-    border-radius: 20px; 
-    padding-block: 15px;
+        display: flex;
+        border: none;
+        /* align-items: center; */
+        margin-top: 25px;
+        margin-left: 230px;
+        justify-content: center;
+        width: 38.5rem;
+        background-color: #36AAD9;
+        border-radius: 20px; 
+        padding-block: 15px;
 }
 .account{
     display: flex;
