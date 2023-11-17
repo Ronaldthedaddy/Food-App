@@ -11,6 +11,7 @@ export const Layout = () => {
   const [Email,setEmail] = useState("")   
   const [Password,setPassword] = useState("") 
   const [loading, setLoading] = useState("");
+  // const [token, setToken] = useState();
   const navigate = useNavigate();
 
 
@@ -32,10 +33,13 @@ export const Layout = () => {
       );
 
       const data = await response.json();
-
+      localStorage.setItem('Token',data.data.accessToken);
+      
+      console.log()
       if (data.status) {
         setLoading(false);
-
+        
+        
         // If data.status is true, redirect to '/home'
         navigate("/onboarding");
       } else {
@@ -47,28 +51,15 @@ export const Layout = () => {
     }
   };
 
-  //   const response = await fetch ("http://89.38.135.41:7654/api/auth/authenticate",
-  //   {
-  //     method: "POST", headers:{"Content-Type":"application/json"},
-  //     body:JSON.stringify({
-  //       email: Email,
-  //       password:Password 
-  //     })
-  //   })
-  //   const data = await response.json();
-    
-
-  //  console.log(data)
-  // };
 
   return (
     // Main container
     <main path="/" className="main_cont">
-      {/* First container (left side) */}
-      <section className="first_cont">
+    {/* First container (left side) */}
+ <section className="first_cont">
         <img src={tmlogo} alt="" />
         <div className="food_logo">
-          <img src={foodlogo} className="foodlogo" alt="" />
+          <img src={foodlogo} className="foodlogo34" alt="" />
         </div>
 
         <div className="down_text">
@@ -80,9 +71,6 @@ export const Layout = () => {
 
           <p className='curve'></p>
           
-          {/* <div className='curvebox'>
-            <img src={curve} className="curve" alt=""/>
-          </div> */}
 
         </div>
         
@@ -90,11 +78,11 @@ export const Layout = () => {
 
 {/* Second container (right side) */}
 
-      <section className="second_cont">
+      <section className="second_contl">
 
-      <div className='food_logo2'>
-      <img src={tmlogo} className="foodlogo2" alt="" />
-      </div>
+      
+      <img src={tmlogo} className="foodlogo25" alt="" />
+      
 
         <b className='welcome_text'>Welcome Back</b>
         <span className='sign_text'> Sign in with your email address and password</span>

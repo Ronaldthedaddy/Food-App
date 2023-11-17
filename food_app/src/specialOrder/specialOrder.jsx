@@ -12,9 +12,10 @@ const SpecialOrder = () => {
    const [ Pasta1, setPasta1] = useState(false);
    const [ Other1, setOther1] = useState(false);
 
+ 
 
   return (
-    <main className=''>
+    <main>
          <section className="brice">
             
             <div 
@@ -31,6 +32,8 @@ const SpecialOrder = () => {
               color:Breakfast1?"#36aad9":"",
             }}
             >BREAKFAST</div>
+
+            
             <div 
             className="ricetext"
             onClick={(()=>{
@@ -43,9 +46,9 @@ const SpecialOrder = () => {
             style={{
                 borderBottom:Rice1?"4px solid #36AAD9" :"",
                 color:Rice1?"#36aad9":"",
-            }}
+            }} 
             >RICE</div>
-            <div  
+            <div 
             className="pastext"
             onClick={(()=>{
               setBreakfast1(false);

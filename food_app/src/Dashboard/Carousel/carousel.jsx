@@ -18,8 +18,8 @@ const Carousel = () => {
     return () => {
       clearInterval(interval);
     };
-  }, [currentIndex]);
-
+  }, );
+  // [currentIndex]
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -33,7 +33,7 @@ const Carousel = () => {
         >
           {images.map((image, index) => (
             <div key={index} className="slide-item">
-              <img src={image} alt={`Image ${index + 1}`} />
+              <img src={image} alt={`Img ${index + 1}`} />
             </div>
           ))}
         </div>

@@ -2,13 +2,11 @@ import React, {useState} from 'react'
 import "./homeboarding.css"
 import tmlogo from "../images/tmlogo.png"
 import notify from "../images/notify.png"
-// import star from "../images/star.png"
 import bell from "../images/bell.png"
 import TopVendors from './topvendors'
 import OtherVendor from './othervendors'
 import Hotdeals from '../Onboarding/Hotdeals'
 import { Link } from 'react-router-dom'
-// import riceback from "../images/riceback.png"
 
 const Homeboarding = () => {
     const [topVendors, setTopVendors] = useState(true);
@@ -20,10 +18,12 @@ const Homeboarding = () => {
             <div><img src={tmlogo} className='onblogo' alt=''/></div>
 
 
-                {/* <div className='placinup'> */}
 
                 <div className='placehome'> 
-                   <div className='placehomer'> <input className='homeput' type='input' placeholder='Search for Vendor'/> <button className='guton'>Search</button></div>
+                   <div className='placehomer'> <input className='homeput' type='input' 
+                   placeholder='Search for Vendor'/> 
+                   <button className='guton'>Search</button>
+                   </div>
                 </div>
 
             <div className='nolinup'>
@@ -34,9 +34,6 @@ const Homeboarding = () => {
                 
                 <Link to="/login" className='lignup'>LOGIN/SIGNUP</Link>
             </div>
-
-                {/* </div> */}
-           
 
         </header>
 
@@ -53,7 +50,6 @@ const Homeboarding = () => {
                 <div className='anyxt'>Anytime.</div>
                 <div className='dfiwxt'>Delicious food is waiting for you</div>
 
-                
             </section>
 
 
@@ -89,8 +85,6 @@ const Homeboarding = () => {
                 className='othors'>Other Vendors</div>
             </div>
 
-            {/* <TopVendors/>
-            <OtherVendor/> */}
             
                 {topVendors && <TopVendors />}
                 {otherVendors && <OtherVendor />}

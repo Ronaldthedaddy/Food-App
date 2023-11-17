@@ -20,9 +20,6 @@ export const SignUp = () => {
   const [ConfirmPassword, setConfirmPassword] = useState("");
   
   const [loading, setLoading] = useState(false);
-  // const [response, setResponse] = useState(null);
-  // const [error, setError] = useState(null);
-
 
   const [inputPass, setInputPass] = useState("password");
   const [show, setShow] = useState(false);
@@ -72,12 +69,13 @@ console.log("");
 
   return (
     // Main container
+
     <main path="/" className="main_cont">
-      {/* First container (left side) */}
-      <section className="first_cont">
-        <img src={tmlogo} className="tm_logo" alt="" />
+
+<section className="first_cont">
+        <img src={tmlogo} alt="" />
         <div className="food_logo">
-          <img src={foodlogo} className="foodlogo" alt="" />
+          <img src={foodlogo} className="foodlogo34" alt="" />
         </div>
 
         <div className="down_text">
@@ -85,22 +83,19 @@ console.log("");
             <b>Order your</b> <span>favorite lunch</span>
           </div>
           <span>&</span>
-          <span>
-            Enjoy other <b>Services</b>
-          </span>
+          <span>Enjoy  other <b>Services</b></span>
 
-          <p className="curve"></p>
+          <p className='curve'></p>
+          
 
-          {/* <div className='curvebox'>
-         <img src={curve} className="curve" alt=""/>
-       </div> */}
         </div>
+        
       </section>
 
-      {/* Second container */}
+      {/* Second container, right side */}
 
       <section className="second_cont">
-        <div className="food_logo2">
+        <div className="food_logo26">
           <img src={tmlogo} className="foodlogo2" alt="" />
         </div>
 

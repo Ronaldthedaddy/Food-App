@@ -8,11 +8,10 @@ import { Link } from 'react-router-dom'
 export const Proceed = () => {
   return (
    <main className='main_cont'>
- {/* First container (left side) */}
  <section className="first_cont">
         <img src={tmlogo} alt="" />
         <div className="food_logo">
-          <img src={foodlogo} className="foodlogo" alt="" />
+          <img src={foodlogo} className="foodlogo34" alt="" />
         </div>
 
         <div className="down_text">
@@ -24,9 +23,6 @@ export const Proceed = () => {
 
           <p className='curve'></p>
           
-          {/* <div className='curvebox'>
-            <img src={curve} className="curve" alt=""/>
-          </div> */}
 
         </div>
         
@@ -35,7 +31,7 @@ export const Proceed = () => {
 {/* Second container (right side) */}
 
 
-<section className="second_cont">
+<section className="second_contp">
 
     <div className='box'>
 

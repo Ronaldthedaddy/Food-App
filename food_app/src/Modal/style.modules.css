@@ -15,7 +15,195 @@
 } */
 
 .modaler{
-    border: 2px solid red;
-    width: 500px;
-    height: 500px;
+    /* border: 2px solid red; */
+    width: 50rem;
+    height: 51rem;
+}
+.top12{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.xmspot{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    border: none;
+    color: #FFF ;
+    font-size: 23px;
+    background: #A3A3A3;;
+    border-radius: 50%;
+}
+.counter-cont{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.plusym{
+    display: flex;
+    color: #FFF;
+    align-items: center;
+    padding: 0.2rem 0.7rem;
+    text-align: center;
+    border-radius: 2px;
+    background: #36AAD9;
+    border: none;
+    font-size: 25px;
+}
+.plusyp{
+    display: flex;
+    color: #FFF;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    border-radius: 2px;
+    background: #36AAD9;
+    border: none;
+    font-size: 25px;
+}
+.vendorName1{
+    font-size: 28px;
+    font-weight: 500;
+}
+.break4h{
+    font-size: 24px;
+    font-weight: 500;
+}
+.boil4h{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+}
+.pic4h{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.takequired{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.takewayxtt{
+    color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.reqxtt{
+    color: rgba(0, 0, 0, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    background: rgba(163, 163, 163, 0.50);
+}
+.yourstras{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+.prodrink{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+.addprotein{
+    flex: 0.5;
+    padding-right: 2rem;
+    border-right: 3px solid rgba(0, 0, 0, 0.05);
+}
+.addpd{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.adrink{
+    flex: 0.5;
+}
+.radra{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.radtname{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.tname{
+    font-size: 20px;
+    font-weight: 500;
+}
+.nairaz{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.price4h{
+    color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.counterprop{
+    display: flex;
+    align-items: center;
+}
+.clallxt{
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.addtoxt{
+    display: flex;
+    gap: 2rem;
+}
+.clearpcxt{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: rgba(0, 0, 0, 0.30);
+    font-size: 18px;
+    font-weight: 500;
+}
+.clearpic{
+    margin-top: 0.5rem;
+}
+.addtoxtdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 10px;
+    color: #FFF;
+    background: #36AAD9;
+}
+.addtoxtt{
+    border-right: 2px solid white;
+    padding-right: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+.k8xt{
+    font-size: 18px;
+    font-weight: 400;
 }

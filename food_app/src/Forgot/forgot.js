@@ -6,7 +6,6 @@ import arrow from "../images/arrow.png";
 import letter from "../images/letter.png";
 import phone from "../images/phone.png";
 import { Link } from "react-router-dom";
-
 import { AiFillCheckCircle } from "react-icons/ai";
 
 export const forgot = () => {

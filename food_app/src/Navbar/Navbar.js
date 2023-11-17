@@ -1,44 +1,46 @@
 import React from 'react'
 import "./Navbar.css"
-import {AiOutlineSearch} from "react-icons/ai"
-import count from "../images/count.png"
-import notification from "../images/notification.png"
-import human from "../images/human.png"
+import tmlogo from "../images/tmlogo.png"
+import notify from "../images/notify.png"
+import bell from "../images/bell.png"
+import adelekepic from "../images/adelekepic.png"
+import ModalExample from "../Onboarding/Dropdown"
+// import {AiOutlineSearch} from "react-icons/ai"
+// import count from "../images/count.png"
+// import notification from "../images/notification.png"
+// import human from "../images/human.png"
 
 export const Navbar = () => {
   return (
     
-    <navbar className='navbar'>
+    <header className='onboardhead'>
+    <div><img src={tmlogo} className='onblogo' alt=''/></div>
 
-  
-    <div className='nav_search'>
-            <div className='search_holder'>
-            <AiOutlineSearch className='searchicon'/>
-            <input type="text" placeholder="Search for anything" className="search_input" />
-            </div>
 
-    </div>
 
-    <div className='nav_right'>
-
-        <div className='countpart'>
-        <img src={count} className='count' alt=""/>
-        <img src={notification} className='notification' alt=""/>
+        <div className='placehome'> 
+           <div className='placehomer'> <input className='homeput' type='input' placeholder='Search for Vendor'/> <button className='guton'>Search</button></div>
         </div>
 
+    <div className='nolinup'>
+        <div className='notifell'>
+            <div><img src={notify} alt=''/></div>
+            <div><img src={bell} alt=''/></div>
+        </div>
+        
+
+        <div className='ligndiv'>
+          <img src={adelekepic} alt="" />
+             <div className='lign30'>
+                <div className='lignup2'>Adeleke Peters</div>
+
+                <div className='tm30xt'>TM30 Staff
+                    <ModalExample/>
+                </div>
+             </div>
+        </div>
     </div>
-
-    <div className='humanpeter'>
-            <img src={human} className='human' alt=""/>
-
-                <div className='peter' >
-            <span className='adels'>Adeleke Peters</span>
-            <span className='gmail' >Adelekepet@gmail.com</span>
-                 </div> 
-
-    </div>
-
-    </navbar>
+</header>
 
 
 

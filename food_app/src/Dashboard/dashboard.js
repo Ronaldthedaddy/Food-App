@@ -1,31 +1,79 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "./dashboard.css";
-import Navbar from "../Navbar/Navbar";
-import Sidebar from "../Sidebar/Sidebarr";
 import Carousel from "./Carousel/carousel";
-import dashback from "../images/dashnavback.png";
+// import dashback from "../images/dashnavback.png";
 import dashstar from "../images/dashstar.png";
 import dome from "../images/dome.png";
-import SpecialOrder from "../specialOrder/specialOrder";
-import Defaults from "../Defaultt/defaultOrder";
+import tmlogo from "../images/tmlogo.png"
+import notify from "../images/notify.png"
+import bell from "../images/bell.png"
+import adelekepic from "../images/adelekepic.png"
+import ModalExample from "../Onboarding/Dropdown"
 import { AiOutlineSearch } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import SpecialOrder from "../specialOrder/specialOrder";
+
+// import Navbar from "../Navbar/Navbar";
+// import Sidebar from "../Sidebar/Sidebarr";
+// import SpecialOrder from "../specialOrder/specialOrder";
+// import Defaults from "../Defaultt/defaultOrder";
+
 
 const Dashboard = () => {
-  const [Default, setDefault] = useState(true);
-  const [Special, setSpecial] = useState(false);
+  // const [Default, setDefault] = useState(true);
+  // const [Special, setSpecial] = useState(false);
+
+  // const [data, setData] = useState([]);
+  
+  //   useEffect(() => {
+
+  //     // Make a GET request to the API
+  //     axios.get('http://89.38.135.41:7654/api/items/category/147626d5-db63-4903-879d-9fea21773f85')
+  //       .then(response => {
+  //         setData(response.data);
+  //       })
+  //       .catch(error => {
+  //         console.error('Error fetching data:', error);
+  //       });
+  //   }, []);
+
 
   return (
     <main className="whole">
-      <div className="sidebar2">
-        <Sidebar />
 
-        <div className="navbar2">
-          <Navbar />
+        <article className="wholein">
+
+        <header className='onboardheadz'>
+
+            <div className='nolinupz'>
+                    <div>
+                      <img src={tmlogo} className='onblogoz' alt=''/>  
+                    </div>
+
+                    <article className="notilign">
+                      <div className='notifellz'>
+                         <div><img src={notify} alt=''/></div>
+                         <div><img src={bell} alt=''/></div>
+                     </div>
+
+                     <div className='ligndiv'>
+                         <img src={adelekepic} alt="" /> 
+                            <div className='lign30'>
+                               <div className='lignup2'>Adeleke Peters</div> 
+                               <div className='tm30xt'>TM30 Staff
+                                   <ModalExample/>
+                               </div>
+                            </div>
+                     </div>
+                    </article>
+
+            </div>
+        </header>
+
 
           <div className="dashback">
-            {" "}
-            <img src={dashback} className="dashbackpic" alt="" />{" "}
+            <div className="dashbackpic"></div>
+            {/* <img src={dashback}  alt="" />{" "} */}
           </div>
 
           <article className="duo">
@@ -33,46 +81,9 @@ const Dashboard = () => {
               <section className="leftduo">
                 <div className="ordead">
                   <div className="ordeadoth">
-                    <div className="orderout">
-                      <div className="ortype">Select Order Type</div>
-                      {/* <div className="orline"></div> */}
-                      <div className="ordertype">
-                        <div className="defspec">
-                          <div
-                            onClick={() => {
-                              setDefault(true);
-                              setSpecial(false);
-                            }}
-                            style={{
-                              background: Default ? "#36AAD9" : "",
-                              color: Default ? "#fff" : "",
-                              border: Default ? "none" : "",
-                            }}
-                            className="deford"
-                          >
-                            Default Order
-                          </div>
-                          <div
-                            onClick={() => {
-                              setSpecial(true);
-                              setDefault(false);
-                            }}
-                            style={{
-                              background: Special ? "#36AAD9" : "",
-                              color: Special ? "#fff" : "",
-                              border: Special ? "none" : "",
-                            }}
-                            className="specord"
-                          >
-                            Special Order
-                          </div>
-                        </div>
+                      <div className="caroutt">
+                        <Carousel className="caroupic" />
                       </div>
-                    </div>
-
-                    <div className="caroutt">
-                      <Carousel className="caroupic" />
-                    </div>
                   </div>
 
                   <div className="bukka2">
@@ -96,13 +107,14 @@ const Dashboard = () => {
                     </div>
 
                     <div className="vendome">
-                      <div className="vext">Vendor</div>
+                      <div className="vext">Back to Vendors</div>
                       <div>
                         <img src={dome} alt="" />
                       </div>
                     </div>
                   </div>
                 </div>
+
                 {/* Navbar Section */}
                 <div className="navout">
                   <navbar className="navbard">
@@ -118,19 +130,17 @@ const Dashboard = () => {
                     </div>
                   </navbar>
                 </div>
-                {/*Breafast/Lunch/Dinner Demacation  */}
-                <article className="brunerout">
-                  <section className="brunerin">
-                    <div className="brext">Breakfast</div>
-                    <div className="lext">Lunch</div>
-                    <div className="dext"> Dinner </div>
-                  </section>
-                </article>
 
-                {Special && <SpecialOrder />}
-                {Default && <Defaults />}
+               <SpecialOrder/>
+
+                {/* {Special && <SpecialOrder />}
+                {Default && <Defaults />} */}
                 
               </section>
+
+
+
+
 
               {/*Right Side*/}
 
@@ -169,8 +179,10 @@ const Dashboard = () => {
               </section>
             </main>
           </article>
-        </div>
-      </div>
+
+
+        </article>
+       
     </main>
   );
 };

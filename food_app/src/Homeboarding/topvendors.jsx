@@ -4,10 +4,28 @@ import choice from "../images/Choice Meals.png"
 import kobe from "../images/Kobe Delicious.png"
 import gidi from "../images/Gidi Grills.png"
 import star from "../images/star.png"
-// import { MdCallMade } from 'react-icons/md'
+// import axios from 'axios'
 
 
 const TopVendors = () => {
+
+    // let useDetails = JSON.parse(localStorage.getItem("vendor"));
+	// const token = useDetails?.data?.token;
+	// const config = {
+	// 	headers: {
+	// 		Authorization: useDetails?.data?.token,
+	// 	},
+	// };
+	// const clientTransactions = async () => {
+	// 	await axios
+	// 		.get("http://89.38.135.41:7654/api/users/dashboard", config)
+	// 		.then((res) => {
+	// 			// setGetTransaction(res.data?.data);
+	// 			console.log(res.data);
+	// 		})
+	// 		.catch((err) => {});
+	// };
+	// };
     const topVendors = [{
         name: "Mama J Bukka",
         image: mama
@@ -27,6 +45,7 @@ const TopVendors = () => {
     <section className='four2'>
         {topVendors.map((a)=>{
             return(
+
                 <div className='ven_details'>
                 <img src={a.image} alt='' className='mama'/>
                 <div className='ven_name'>{a.name}</div>
@@ -34,28 +53,9 @@ const TopVendors = () => {
                 </div>
             )
         })}
-    
-
-    {/* <div className='ven_details'>
-    <img src={choice} alt='' className='choice'/>
-    <div className='ven_name'>Choice Meal</div>
-    <span className='ven_rating'> <img src={star} alt=''/>4.7 <span className='ratings'>(500+)</span></span>
-    </div>
-
-    <div className='ven_details'>
-    <img src={kobe} alt='' className='kobe'/>
-    <div className='ven_name'>Kobe Delicious</div>
-    <span className='ven_rating'> <img src={star} alt=''/>4.9 <span className='ratings'>(374+)</span></span>
-    </div>
-
-    <div className='ven_details'>
-    <img src={gidi} alt='' className='gidi'/>
-    <div className='ven_name'>Gidi Grills</div>
-    <span className='ven_rating'> <img src={star} alt=''/>4.9 <span className='ratings'>(404+)</span></span>
-    </div> */}
 
 </section>
   )
-}
+    }
 
 export default TopVendors

@@ -6,15 +6,54 @@ import hotbread from "../images/hotbread.png";
 import { IoIosAdd } from "react-icons/io";
 import englishbreakfast from "../images/englishbreakfast.png";
 import Modal from "../Modal/Modal";
+import Counter from "./Counter";
+import clear from "../images/clear.png"
 
 const Breakfast = () => {
   // Modal State
   const [modalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
-  const [Add, setAdd] = useState(false)
+  // const [Add, setAdd] = useState(false)
   // State End
 
+  const Drinks = [
+    {
+      Name:"Coke",
+    },
+    {
+      Name:"Pepsi"
+    },
+    {
+      Name:"Fanta"
+    },
+    {
+      Name:"Sprite"
+    },
+  ];
+
+  const protein = [
+    {
+      Name:"Plantain"
+    },
+    {
+      Name:"Turkey"
+    },
+    {
+      Name:"Beef"
+    },
+    {
+      Name:"Chicken"
+    },
+    {
+      Name:"Fish"
+    },
+    {
+      Name:"Egg"
+    },
+  ]
+
+  
   return (
     <div>
       <article className="bomelette">
@@ -40,12 +79,93 @@ const Breakfast = () => {
 
             {/* <button>Open Modal</button> */}
             <Modal isOpen={modalOpen} className="modaler" onClose={closeModal}>
-                <div style={{display: 'flex',alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid red'}} className="top12">
-                    <p className="vendorName1">Omelotte</p>
-                    <button onClick={closeModal}>x</button>
-                    <button onClick={() => setAdd(true)}>Add</button>
+
+                <div className="top12">
+                    <div className="vendorName1">Boiled Yam & Egg</div>
+                    <button className="xmspot" onClick={closeModal}>x</button>
                 </div>
-                <img src={boiledyam} alt="" />
+
+                <section className="boil4h">
+                  <div className="pic4h">
+                  <img src={boiledyam} alt="" />
+                  <div className="break4h">&#8358;400.00</div>
+                  </div>
+
+                  <div><Counter/></div>
+
+                </section>
+
+                <article className="takequired">
+                  <div className="takewayxtt">Takeaway Pack</div>
+                  <div className="reqxtt">Required</div>
+                </article>
+
+                <div className="yourstras">YOUR EXTRAS</div>
+
+
+              <section className="prodrink">
+                <article className="addprotein">
+                  <div className="addpd">ADD PROTEIN TO YOUR MEAL</div>
+
+                  
+                    {protein.map((T)=>{
+                      return(
+                        <section className="radra">
+                         
+                            <div className="radtname">
+                             <input type="radio" />
+                             <span className="tname">{T.Name}</span>
+                            </div>
+
+                          <span className="nairaz">
+                            <div className="price4h">&#8358;400.00</div>
+                            <div><Counter/></div>
+                          </span>
+
+                        </section>
+                      )
+                    })}
+                    
+                  </article>
+
+
+
+                   <article className="adrink">
+                      <div className="addpd">ADD A DRINK?</div>
+                      {Drinks.map((t)=>{
+                        return(
+                          <section className="radra">
+                         
+                          <div className="radtname">
+                           <input type="radio" />
+                           <span className="tname">{t.Name}</span>
+                          </div>
+
+                        <span className="nairaz">
+                          <div className="price4h">&#8358;400.00</div>
+                          <div><Counter/></div>
+                        </span>
+
+                      </section>
+                        )
+                      })}
+                  </article>
+
+              </section>
+
+
+                    <section className="clallxt">
+                      <div className="clearpcxt">
+                        <div><img src={clear} alt="" className="clearpic" /></div>
+                        <div>Clear all</div>
+                      </div>
+
+                      <section className="addtoxtdiv">
+                        <div className="addtoxtt">ADD TO ORDER</div>
+                        <div className="k8xt">&#8358;2,800.00</div>
+                      </section>
+
+                    </section>
             </Modal>
           </div>
         </section>

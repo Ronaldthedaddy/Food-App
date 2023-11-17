@@ -12,16 +12,9 @@ import twitter from "../images/twitter.png"
 const Hotdeals = () => {
   return (
     <main className='all_for_one'>
+
    {/* Hot Deals */}
    <div className='hotdeals_section'> 
-{/* 
-        <div className='eclipse'>
-
-        <div className='eclipse1'> <img src={eclipse1} className='eclipse1_img' alt=''/></div>
-        <div className='eclipse2'> <img src={eclipse2} className='eclipse2_img' alt=''/></div>
-
-        </div> */}
-        
 
             <div className='hotdeals'>
 
@@ -67,7 +60,7 @@ const Hotdeals = () => {
 
         </div>
 
-            <div>
+                 <div className='shake'>
                  <img src={shake} className='shake' alt=''/>
                 </div>
         

@@ -28,9 +28,3 @@ const Modal = ({ isOpen, onClose, children, className }) => {
     : null;
 };
 export default Modal;
-// const x = {
-// backgroundColor: 'red',
-// // marginRight: '1rem',
-// display: 'flex',
-// justifyContent: 'end'
-// }

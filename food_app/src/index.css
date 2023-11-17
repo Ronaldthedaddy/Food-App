@@ -18,10 +18,10 @@ a{
   text-decoration: none;
 }
 
-.carousel {
-  max-width: 600px;
+/* .carousel {
+  max-width: 100rem;
   margin: 0 auto;
-}
+} */
 
 .slide-container {
   overflow: hidden;
@@ -34,6 +34,7 @@ a{
 }
 .slide-item {
   flex: 0 0 100%;
+  width: 19.4vw;
   /* margin-right: 15px; */
 }
 .slide-item img {
